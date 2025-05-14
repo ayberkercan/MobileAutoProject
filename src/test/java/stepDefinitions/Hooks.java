@@ -21,6 +21,7 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
+
         // Test başarısız olursa ekran görüntüsü alır ve senaryoya ekler
         if (scenario.isFailed()) {
             if (Driver.getAppiumDriver() != null) {

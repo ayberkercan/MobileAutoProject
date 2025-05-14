@@ -36,7 +36,7 @@ public class AssignmentFormPages {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Yeni Talep Oluştur']")
     public WebElement createNewRequest;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Görevlendirme Formu']")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Görevlendirme Talep Formu\"]\n")
     public WebElement requestForTaskForm;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Görev Ekle']")
@@ -51,40 +51,39 @@ public class AssignmentFormPages {
     @AndroidFindBy(xpath = "//android.widget.EditText[@text='Yazınız']")
     public WebElement subjectTask;
 
-    @AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"Gün/Ay/Yıl\"])[1]")
+    @AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"08 Mayıs 2025\"])[1]")
     public WebElement clickOnTheStartDate;
 
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"24 Eylül 2024\"]")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"10 Mayıs 2025\"]")
     public WebElement enterStartTime;
 
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
     public WebElement okButton1;
 
-    @AndroidFindBy(xpath = "(//android.widget.TextView[@text='SS:dd'])[1]")
+    @AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"SS:dd\"])[1]")
     public WebElement clickOnTheStartClock;
 
-    @AndroidFindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc='9']")
+    @AndroidFindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"11\"]")
     public WebElement chooseOclock;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
     public WebElement okButton2;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Gün/Ay/Yıl']")
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Gün/Ay/Yıl\"]")
     public WebElement clickOnTheEndDate;
 
-    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"25 Eylül 2024\"]")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"11 Mayıs 2025\"]")
     public WebElement chooseEndDate;
 
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
     public WebElement okButton3;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='SS:dd']")
+    @AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"SS:dd\"]")
     public WebElement clickEndOclock;
 
-    @AndroidFindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc='9']")
+    @AndroidFindBy(xpath = "//android.widget.RadialTimePickerView.RadialPickerTouchHelper[@content-desc=\"9\"]")
     public WebElement chooseEndOclock;
-
-    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
     public WebElement okButton4;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='Kaydet']")
