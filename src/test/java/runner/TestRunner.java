@@ -9,8 +9,10 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "json:target/cucumber.json",
-                "html:target/cucumber-html-report" // alternatif rapor eklendi
+                 "html:target/cucumber-html-report" // alternatif rapor eklendi
         },
+
+
         features = "src/test/resources/features",
         glue = "stepDefinitions",
         tags = "",
@@ -18,3 +20,4 @@ import org.junit.runner.RunWith;
 )
 public class TestRunner {
 }
+

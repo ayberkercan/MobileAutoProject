@@ -55,6 +55,7 @@ Feature: AssignmentForm
     When select the end time
     # Takvim onay butonuna tıklanır
     When click on the calendarOkButtonFour
+    When Write the reason for working hours "Çalışma yapılacak"
     # Save butonuna kaydırılır ve tıklanır
     When Scroll down to the elementSaveButton
     # Save butonuna tıklanır (yorum satırına alınmış)
@@ -65,6 +66,7 @@ Feature: AssignmentForm
     When select an additional approver from the list Oct.
     # Gönder butonuna tıklanır
     When click on the send button
+When click on the saved button
     # Onay mesajını kapatma butonuna tıklanır
     When click on the close confirmation button
     # Devam eden talepler için görev formuna tıklanır

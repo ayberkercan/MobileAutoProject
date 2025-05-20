@@ -86,6 +86,7 @@ public class AssignmentFormStepDefs {
         assignmentFormPages.okButton2.click();
     }
 
+
     @When("click on the end date")
     public void clickOnTheEndDate() {
         // Bitiş tarihine tıklama
@@ -122,6 +123,10 @@ public class AssignmentFormStepDefs {
         assignmentFormPages.okButton4.click();
     }
 
+    @When("Write the reason for working hours {string}")
+    public void write_the_reason_for_working_hours(String reason) {
+  assignmentFormPages.reasonforworkinghours.sendKeys(reason);
+    }
     @When("Scroll down to the elementSaveButton")
     public void scrollDownToTheElementSaveButton() {
         // Kaydet butonuna ulaşmak için sayfayı kaydırma
@@ -145,11 +150,14 @@ public class AssignmentFormStepDefs {
         // Gönder butonuna tıklama
         assignmentFormPages.submitButton.click();
     }
-
-    @When("click on the close confirmation button")
+    @When("click on the saved button")
+    public void click_on_the_saved_button() {
+   assignmentFormPages.sendButton.click();
+    }
+   @When("click on the close confirmation button")
     public void clickOnTheCloseConfirmationButton() {
-        // Kapat onay butonuna tıklama
-        assignmentFormPages.closeInfoButton.click();
+         //Kapat onay butonuna tıklama
+      assignmentFormPages.closeInfoButton.click();
     }
 
     @When("click on the assignment form for ongoing requests")
